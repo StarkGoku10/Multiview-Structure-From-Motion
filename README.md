@@ -88,23 +88,27 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
 ### Setup Instructions
 
 1. **Clone the Repository:**
+
   ```bash 
   git clone https://github.com/StarkGoku10/Multiview-Structure-From-Motion.git
   cd Multiview-Structure-From-Motion
   ```
 
 2. **Create a Virtual Environment(Optional but recommended):**
+
   ```bash
   python3 -m venv venv
   source venv/bin/activate #on windows: venv\Scripts\activate
   ```
 
 3. **Install Dependencies:**
+
   ```bash 
   pip install -r Requirements.txt
   ```
 
 4. **Visualization(Optional)**
+
   - For visualizing the saved point cloud, python's `Open3D` library is used. 
   ```bash
   pip install open3d
@@ -138,21 +142,25 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
 1. **Navigate to the Project Directory**
   Ensure you are in the root directory where the 'SfM.py` file resides.
+
   ```bash
   cd Multiview-Structure-from_Motion
   ```
 
 2. **Run the Pipeline**
   Ensure you have specified the proper directory paths for the dataset. Execute the following command: 
+
   ```bash
   python SfM.py
   ```
   **Note:** Adjust the dataset path as needed(in the `__main__` block):
+
     ```bash
     if __name__ == '__main__':
       sfm= StructurefromMotion("Datasets/YourDataset")
       sfm()
     ```
+    
 3. **Monitor the Output:**
-  
+
 
