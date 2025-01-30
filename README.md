@@ -1,4 +1,4 @@
-# Multiview-Structure-from-Motion (SfM)
+# Structure-from-Motion (SfM)
 
 ## Overview
 
@@ -30,7 +30,7 @@ This repository contains a Structure from Motion(SfM) pipeline that resonctructs
 - **Triangulation**  
   - Converts matched points into 3D coordinates with `cv2.triangulatePoints`.
 
-- **Optional Bundle Adjustment**  
+- **Bundle Adjustment(Optional)**  
   - Minimizes reprojection error across cameras and 3D points for a more accurate reconstruction if enabled.
 
 - **PLY Export**  
@@ -58,73 +58,101 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
    - **Pose Recovery:** Recover fundamental camera motion (rotation, translation) under the pinhole camera model.
 
 4. **Triangulation:**
-- **Project Matrices:** Construct projection matrices for each camera pose.
-- **3D points Triangulation:** Convert 2D matched points into 3D coordinates. Maintain a growing set of 3D points as more images are added.
+  - **Project Matrices:** Construct projection matrices for each camera pose.
+  - **3D points Triangulation:** Convert 2D matched points into 3D coordinates. Maintain a growing set of 3D points as more images are added.
 
 5. **Incremental SfM**  
    - For each new image:
-     1. Match features to the previous image.  
-     2. `SolvePnPRansac` to get the new camera pose.  
-     3. Triangulate points between the new view and an existing view. 
+     - Match features to the previous image.  
+     - `SolvePnPRansac` to get the new camera pose.  
+     - Triangulate points between the new view and an existing view. 
 
 6. **Bundle Adjustment(Optional)** 
    - If enabled, refine all camera parameters and 3D points by minimizing reprojection error.
 
-6. **Point Cloud Export**  
+7. **Point Cloud Export**  
    - Accumulate all 3D points plus colors from each iteration.  
    - Save to PLY with potential outlier removal, scaling, and color normalization.
 
 ---
 
-## Dependencies
+## Installation
 
-Prerequisites
+### Prerequisites
 - **Python 3.7+**
 
-```bash
-Install Additional Dependencies listed in the 'Requirements.txt' file.
-```
+  ```bash
+  Install Additional Dependencies listed in the 'Requirements.txt' file.
+  ```
 
-Setup Instructions
+### Setup Instructions
 
 1. **Clone the Repository:**
-```bash 
-git clone https://github.com/StarkGoku10/Multiview-Structure-From-Motion.git
-cd Multiview-Structure-From-Motion
-```
+  ```bash 
+  git clone https://github.com/StarkGoku10/Multiview-Structure-From-Motion.git
+  cd Multiview-Structure-From-Motion
+  ```
 
 2. **Create a Virtual Environment(Optional but recommended):**
-```bash
-python3 -m venv venv
-source venv/bin/activate #on windows: venv\Scripts\activate
-```
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate #on windows: venv\Scripts\activate
+  ```
 
 3. **Install Dependencies:**
-```bash 
-pip install -r Requirements.txt
-```
+  ```bash 
+  pip install -r Requirements.txt
+  ```
 
-4. **Optional: Visualization**
-For visualizing the saved point cloud, python's `Open3D` library is used. 
-```bash
-pip install open3d
-```
+4. **Visualization(Optional)**
+  - For visualizing the saved point cloud, python's `Open3D` library is used. 
+  ```bash
+  pip install open3d
+  ```
+
 5. **Important Note:**
-- Images: 
+- **Images:** 
     - Ensure there is sufficient overlap of the object/scene between consecutive images.
     - Capture images with different orientations and perspectives of the scene.
 
-- Calibration File(`K.txt`):
+- **Calibration File**(`K.txt`)**:**
     - This file contains the camera intrinsic parameters(matrix). The format expected for this file is nine numerical values in a single line or representating 3x3 matrix seperated by spaces or new lines.
     - Ensure that the matrix is accurate and corresponds to the camera used to capture the images.
-    - Example `K.txt` matrix:
+    - **Example `K.txt` matrix:**
+
         ```bash 
         2759.48 0 1520.69
         0 2764.16 1006.81
         0 0 1
         ```
 
+---
 
-Install these via:
-```bash
-pip install opencv-python numpy scipy matplotlib tqdm
+## Usage
+
+### Executing the SfM pipeline
+
+Execute the `sfm.py` script to run the SfM pipeline. The script processes the first two images and triangulates the points between the two images. Then the pipeline adds one image sequentially to reconstruct the D structure of the scene. Optionally, **BUndle Adjustment** can be enabled to refine the 3D points and reduce the reprojection errors.
+
+**Steps:**
+
+1. **Navigate to the Project Directory**
+  Ensure you are in the root directory where the 'SfM.py` file resides.
+  ```bash
+  cd Multiview-Structure-from_Motion
+  ```
+
+2. **Run the Pipeline**
+  Ensure you have specified the proper directory paths for the dataset. Execute the following command: 
+  ```bash
+  python SfM.py
+  ```
+  **Note:** Adjust the dataset path as needed(in the `__main__` block):
+    ```bash
+    if __name__ == '__main__':
+      sfm= StructurefromMotion("Datasets/YourDataset")
+      sfm()
+    ```
+3. **Monitor the Output:**
+  
+
