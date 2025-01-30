@@ -81,9 +81,9 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
 ### Prerequisites
   **Python 3.7+**
 
-  ```bash
-  Install Additional Dependencies listed in the 'Requirements.txt' file.
-  ```
+    ```bash
+    Install Additional Dependencies listed in the 'Requirements.txt' file.
+    ```
 
 ### Setup Instructions
 
@@ -96,23 +96,23 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
 
 2. **Create a Virtual Environment(Optional but recommended):**
 
-  ```bash
-  python3 -m venv venv
-  source venv/bin/activate #on windows: venv\Scripts\activate
-  ```
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate #on windows: venv\Scripts\activate
+    ```
 
 3. **Install Dependencies:**
 
-  ```bash 
-  pip install -r Requirements.txt
-  ```
+    ```bash 
+    pip install -r Requirements.txt
+    ```
 
 4. **Visualization(Optional)**
 
-  - For visualizing the saved point cloud, python's `Open3D` library is used. 
-  ```bash
-  pip install open3d
-  ```
+    For visualizing the saved point cloud, python's `Open3D` library is used. 
+    ```bash
+    pip install open3d
+    ```
 
 5. **Important Note:**
   - **Images:** 
@@ -144,24 +144,24 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
   Ensure you are in the root directory where the 'SfM.py` file resides.
 
-  ```bash
-  cd Multiview-Structure-from_Motion
-  ```
+    ```bash
+    cd Multiview-Structure-from_Motion
+    ```
 
 2. **Run the Pipeline**
 
   Ensure you have specified the proper directory paths for the dataset. Execute the following command: 
 
-  ```bash
-  python SfM.py
-  ```
+    ```bash
+    python SfM.py
+    ```
   **Note:** Adjust the dataset path as needed(in the `__main__` block):
 
-    ```bash
-    if __name__ == '__main__':
-      sfm= StructurefromMotion("Datasets/YourDataset")
-      sfm()
-    ```
+      ```bash
+      if __name__ == '__main__':
+        sfm= StructurefromMotion("Datasets/YourDataset")
+        sfm()
+      ```
 
 3. **Monitor the Output:**
 
