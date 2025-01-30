@@ -165,15 +165,25 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
     ```
 
 3. **Monitor the Output:**
-    The script will process first two first and display messages about the processing step. For each subsequent step, it will perform featue matching,pose estimation, pose recovery, trianglation, bundle adjustment(if enabled) and display the iamge and reprojection error graph for all the images. The script will save the final 3D reconstruction in the form of a point cloud(`.ply`) and the pose array in the the respective folders. 
+
+  - The script will process first two first and display messages about the processing step. 
+  - For each subsequent step, it will perform featue matching,pose estimation, pose recovery, trianglation, bundle adjustment(if enabled) and display the iamge and reprojection error graph for all the images.
+  - The script will save the final 3D reconstruction in the form of a point cloud(`.ply`) and the pose array in the the respective folders. 
 
 4. **Visualize the Point Cloud:**
     
    - The point cloud can be visualized using visualized tools like [MeshLab](https://www.meshlab.net/), [Open3D](https://www.open3d.org/l) or [CloudCompare](https://www.cloudcompare.org/).
    - For this project, `Open3D` is used for visualzation of the point cloud. To install `open3d`, Execute the following command:
+   
    ```bash
    pip install open3d 
    ```
+
+   - Run the script with the appropriate path to the point cloud to generate the 3D visualization:
+
+   ```bash
+   python visualize.py
+   ``` 
 
 ---
 
@@ -181,24 +191,39 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
 1. **Console:**
 
-```bash
-  Camera Intrinsic Matrix: [[ 1.1969761e+03 -3.4106051e-13  4.6619110e+02]
-  [ 0.0000000e+00  1.1990593e+03  3.1413251e+02]
-  [ 0.0000000e+00  0.0000000e+00  1.0000000e+00]]
-  Reprojection error for first two images: 0.00487721240747486
-  total_images 55
-    0%|                                                                                                                                                                             | 0/55 [00:00<?, ?it/s] Shape of New Array (468, 2) (468, 2)
-  Reprojection error: 0.0508255796928927
-    2%|███                                                                                                                                                                  | 1/55 [00:01<00:58,  1.08s/it] Shape of New Array (295, 2) (295, 2)
-  Reprojection error: 0.5636247818285103
-    4%|██████                                                                                                                                                               | 2/55 [00:01<00:37,  1.40it/s]
+  ```bash
+    Camera Intrinsic Matrix: [[ 1.1969761e+03 -3.4106051e-13  4.6619110e+02]
+    [ 0.0000000e+00  1.1990593e+03  3.1413251e+02]
+    [ 0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+    Reprojection error for first two images: 0.00487721240747486
+    total_images 55
+      0%|                                                                                                                                                                             | 0/55 [00:00<?, ?it/s] Shape of New Array (468, 2) (468, 2)
+    Reprojection error: 0.0508255796928927
+      2%|███                                                                                                                                                                  | 1/55 [00:01<00:58,  1.08s/it] Shape of New Array (295, 2) (295, 2)
+    Reprojection error: 0.5636247818285103
+      4%|██████                                                                                                                                                               | 2/55 [00:01<00:37,  1.40it/s]
+      ...
   ```
+
+2. **Reprojection Error Plot:**
+
+  - Saved in `/Results` directory.
+
+3. **Point Cloud(`.ply`):**
+
+  - Point cloud is saved in directory `/Datasets/<DatasetName.ply>`.
+  - Contains the 3D points plus per=point color(in ASCII or binary).
+
+4. **Pose Array:**
+  - A CSV file is stored in `/Results Array/<DatasetName>_pose_array.csv` wih all the camera parameters.
 
 ---
 
 ## Results 
 
-- Reprojection error plot:
+- Reprojection error plots:
+
+  1. **
 ![PB-Lite Banner](Classical_Edge_Detection/results/edges/img3/ColorMap_3.png)
 
 
