@@ -207,15 +207,16 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
 2. **Reprojection Error Plot:**
 
-  - Saved in `/Results` directory.
+    - Saved in `/Results` directory.
 
 3. **Point Cloud(`.ply`):**
 
-  - Point cloud is saved in directory `/Datasets/<DatasetName.ply>`.
-  - Contains the 3D points plus per=point color(in ASCII or binary).
+    - Point cloud is saved in directory `/Datasets/<DatasetName.ply>`.
+    - Contains the 3D points plus per=point color(in ASCII or binary).
 
 4. **Pose Array:**
-  - A CSV file is stored in `/Results Array/<DatasetName>_pose_array.csv` wih all the camera parameters.
+
+    - A CSV file is stored in `/Results Array/<DatasetName>_pose_array.csv` wih all the camera parameters.
 
 ---
 
