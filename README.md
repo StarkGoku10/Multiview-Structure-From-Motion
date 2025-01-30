@@ -175,15 +175,15 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
    - The point cloud can be visualized using visualized tools like [MeshLab](https://www.meshlab.net/), [Open3D](https://www.open3d.org/l) or [CloudCompare](https://www.cloudcompare.org/).
    - For this project, `Open3D` is used for visualzation of the point cloud. To install `open3d`, Execute the following command:
    
-    ```bash
-    pip install open3d 
-    ```
+      ```bash
+      pip install open3d 
+      ```
 
    - Run the script with the appropriate path to the point cloud to generate the 3D visualization:
 
-    ```bash
-    python visualize.py
-    ``` 
+      ```bash
+      python visualize.py
+      ``` 
 
 ---
 
