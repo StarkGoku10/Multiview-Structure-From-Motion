@@ -79,7 +79,7 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
 ## Installation
 
 ### Prerequisites
-- **Python 3.7+**
+**Python 3.7+**
 
   ```bash
   Install Additional Dependencies listed in the 'Requirements.txt' file.
@@ -141,6 +141,7 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 **Steps:**
 
 1. **Navigate to the Project Directory**
+
   Ensure you are in the root directory where the 'SfM.py` file resides.
 
   ```bash
@@ -148,6 +149,7 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
   ```
 
 2. **Run the Pipeline**
+
   Ensure you have specified the proper directory paths for the dataset. Execute the following command: 
 
   ```bash
@@ -160,7 +162,7 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
       sfm= StructurefromMotion("Datasets/YourDataset")
       sfm()
     ```
-    
+
 3. **Monitor the Output:**
 
 
