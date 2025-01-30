@@ -191,19 +191,19 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
 1. **Console:**
 
-  ```bash
-    Camera Intrinsic Matrix: [[ 1.1969761e+03 -3.4106051e-13  4.6619110e+02]
-    [ 0.0000000e+00  1.1990593e+03  3.1413251e+02]
-    [ 0.0000000e+00  0.0000000e+00  1.0000000e+00]]
-    Reprojection error for first two images: 0.00487721240747486
-    total_images 55
-      0%|                                                                                                                                                                             | 0/55 [00:00<?, ?it/s] Shape of New Array (468, 2) (468, 2)
-    Reprojection error: 0.0508255796928927
-      2%|███                                                                                                                                                                  | 1/55 [00:01<00:58,  1.08s/it] Shape of New Array (295, 2) (295, 2)
-    Reprojection error: 0.5636247818285103
-      4%|██████                                                                                                                                                               | 2/55 [00:01<00:37,  1.40it/s]
-      ...
-  ```
+    ```bash
+      Camera Intrinsic Matrix: [[ 1.1969761e+03 -3.4106051e-13  4.6619110e+02]
+      [ 0.0000000e+00  1.1990593e+03  3.1413251e+02]
+      [ 0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+      Reprojection error for first two images: 0.00487721240747486
+      total_images 55
+        0%|                                                                                                                                                                             | 0/55 [00:00<?, ?it/s] Shape of New Array (468, 2) (468, 2)
+      Reprojection error: 0.0508255796928927
+        2%|███                                                                                                                                                                  | 1/55 [00:01<00:58,  1.08s/it] Shape of New Array (295, 2) (295, 2)
+      Reprojection error: 0.5636247818285103
+        4%|██████                                                                                                                                                               | 2/55 [00:01<00:37,  1.40it/s]
+        ...
+    ```
 
 2. **Reprojection Error Plot:**
 
