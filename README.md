@@ -79,11 +79,11 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
 ## Installation
 
 ### Prerequisites
-**Python 3.7+**
+  **Python 3.7+**
 
-    ```bash
-    Install Additional Dependencies listed in the 'Requirements.txt' file.
-    ```
+  ```bash
+  Install Additional Dependencies listed in the 'Requirements.txt' file.
+  ```
 
 ### Setup Instructions
 
