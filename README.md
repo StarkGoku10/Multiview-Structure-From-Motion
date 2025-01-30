@@ -58,8 +58,8 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
    - **Pose Recovery:** Recover fundamental camera motion (rotation, translation) under the pinhole camera model.
 
 4. **Triangulation:**
-  - **Project Matrices:** Construct projection matrices for each camera pose.
-  - **3D points Triangulation:** Convert 2D matched points into 3D coordinates. Maintain a growing set of 3D points as more images are added.
+    - **Project Matrices:** Construct projection matrices for each camera pose.
+    - **3D points Triangulation:** Convert 2D matched points into 3D coordinates. Maintain a growing set of 3D points as more images are added.
 
 5. **Incremental SfM**  
    - For each new image:
@@ -81,9 +81,9 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
 ### Prerequisites
 **Python 3.7+**
 
-  ```bash
-  Install Additional Dependencies listed in the 'Requirements.txt' file.
-  ```
+    ```bash
+    Install Additional Dependencies listed in the 'Requirements.txt' file.
+    ```
 
 ### Setup Instructions
 
@@ -115,20 +115,20 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
   ```
 
 5. **Important Note:**
-- **Images:** 
-    - Ensure there is sufficient overlap of the object/scene between consecutive images.
-    - Capture images with different orientations and perspectives of the scene.
+  - **Images:** 
+      - Ensure there is sufficient overlap of the object/scene between consecutive images.
+      - Capture images with different orientations and perspectives of the scene.
 
-- **Calibration File**(`K.txt`)**:**
-    - This file contains the camera intrinsic parameters(matrix). The format expected for this file is nine numerical values in a single line or representating 3x3 matrix seperated by spaces or new lines.
-    - Ensure that the matrix is accurate and corresponds to the camera used to capture the images.
-    - **Example `K.txt` matrix:**
+  - **Calibration File**(`K.txt`)**:**
+      - This file contains the camera intrinsic parameters(matrix). The format expected for this file is nine numerical values in a single line or representating 3x3 matrix seperated by spaces or new lines.
+      - Ensure that the matrix is accurate and corresponds to the camera used to capture the images.
+      - **Example `K.txt` matrix:**
 
-        ```bash 
-        2759.48 0 1520.69
-        0 2764.16 1006.81
-        0 0 1
-        ```
+          ```bash 
+          2759.48 0 1520.69
+          0 2764.16 1006.81
+          0 0 1
+          ```
 
 ---
 
