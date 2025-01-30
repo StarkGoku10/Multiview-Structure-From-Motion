@@ -89,10 +89,10 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
 
 1. **Clone the Repository:**
 
-  ```bash 
-  git clone https://github.com/StarkGoku10/Multiview-Structure-From-Motion.git
-  cd Multiview-Structure-From-Motion
-  ```
+    ```bash 
+    git clone https://github.com/StarkGoku10/Multiview-Structure-From-Motion.git
+    cd Multiview-Structure-From-Motion
+    ```
 
 2. **Create a Virtual Environment(Optional but recommended):**
 
