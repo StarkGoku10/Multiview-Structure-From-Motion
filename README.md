@@ -149,17 +149,17 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
 2. **Run the Pipeline**
 
-    Ensure you have specified the proper directory paths for the dataset. Execute the following command: 
-
-    ```bash
-    python SfM.py
-    ```
     **Note:** Adjust the dataset path as needed(in the `__main__` block):
 
     ```bash
     if __name__ == '__main__':
       sfm= StructurefromMotion("Datasets/YourDataset")
       sfm()
+    ```
+    Ensure you have specified the proper directory paths for the dataset. Execute the following command: 
+
+    ```bash
+    python SfM.py
     ```
 
 3. **Monitor the Output:**
