@@ -141,26 +141,26 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
 1. **Navigate to the Project Directory**
 
-  Ensure you are in the root directory where the 'SfM.py` file resides.
+    Ensure you are in the root directory where the 'SfM.py` file resides.
 
-  ```bash
-  cd Multiview-Structure-from_Motion
-  ```
+    ```bash
+    cd Multiview-Structure-from_Motion
+    ```
 
 2. **Run the Pipeline**
 
-  Ensure you have specified the proper directory paths for the dataset. Execute the following command: 
+    Ensure you have specified the proper directory paths for the dataset. Execute the following command: 
 
-  ```bash
-  python SfM.py
-  ```
-  **Note:** Adjust the dataset path as needed(in the `__main__` block):
+    ```bash
+    python SfM.py
+    ```
+    **Note:** Adjust the dataset path as needed(in the `__main__` block):
 
-  ```bash
-  if __name__ == '__main__':
-    sfm= StructurefromMotion("Datasets/YourDataset")
-    sfm()
-  ```
+    ```bash
+    if __name__ == '__main__':
+      sfm= StructurefromMotion("Datasets/YourDataset")
+      sfm()
+    ```
 
 3. **Monitor the Output:**
 
