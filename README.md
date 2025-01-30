@@ -1,5 +1,7 @@
 # Structure-from-Motion (SfM)
 
+![PB-Lite Banner](Classical_Edge_Detection/results/edges/img3/ColorMap_3.png)
+
 ## Overview
 
 This repository contains a Structure from Motion(SfM) pipeline that resonctructs 3D point clouds from a set of continuous images of a scene. The project aims to demonstrates= the fundamentals of camera calibration, feature matching, feature matching, pose estimation, triangulation of 3D points and bundle adjustment(optional) to refine both 3D pointds and camera parameters and point cloud visualization which is a 3D representation of the captured scene.
@@ -135,7 +137,7 @@ The **Structure from Motion(SfM)** pipeline reconstructs a 3D representation of 
 
 ### Executing the SfM pipeline
 
-Execute the `sfm.py` script to run the SfM pipeline. The script processes the first two images and triangulates the points between the two images. Then the pipeline adds one image sequentially to reconstruct the D structure of the scene. Optionally, **BUndle Adjustment** can be enabled to refine the 3D points and reduce the reprojection errors.
+Execute the `sfm.py` script to run the SfM pipeline. The script processes the first two images and triangulates the points between the two images. Then the pipeline adds one image sequentially to reconstruct the D structure of the scene. Optionally, **Bundle Adjustment** can be enabled to refine the 3D points and reduce the reprojection errors.
 
 **Steps:**
 
@@ -163,5 +165,41 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
     ```
 
 3. **Monitor the Output:**
+    The script will process first two first and display messages about the processing step. For each subsequent step, it will perform featue matching,pose estimation, pose recovery, trianglation, bundle adjustment(if enabled) and display the iamge and reprojection error graph for all the images. The script will save the final 3D reconstruction in the form of a point cloud(`.ply`) and the pose array in the the respective folders. 
+
+4. **Visualize the Point Cloud:**
+    
+   - The point cloud can be visualized using visualized tools like [MeshLab](https://www.meshlab.net/), [Open3D](https://www.open3d.org/l) or [CloudCompare](https://www.cloudcompare.org/).
+   - For this project, `Open3D` is used for visualzation of the point cloud. To install `open3d`, Execute the following command:
+   ```bash
+   pip install open3d 
+   ```
+
+---
+
+## Output 
+
+1. **Console:**
+
+```bash
+  Camera Intrinsic Matrix: [[ 1.1969761e+03 -3.4106051e-13  4.6619110e+02]
+  [ 0.0000000e+00  1.1990593e+03  3.1413251e+02]
+  [ 0.0000000e+00  0.0000000e+00  1.0000000e+00]]
+  Reprojection error for first two images: 0.00487721240747486
+  total_images 55
+    0%|                                                                                                                                                                             | 0/55 [00:00<?, ?it/s] Shape of New Array (468, 2) (468, 2)
+  Reprojection error: 0.0508255796928927
+    2%|███                                                                                                                                                                  | 1/55 [00:01<00:58,  1.08s/it] Shape of New Array (295, 2) (295, 2)
+  Reprojection error: 0.5636247818285103
+    4%|██████                                                                                                                                                               | 2/55 [00:01<00:37,  1.40it/s]
+  ```
+
+---
+
+## Results 
+
+- Reprojection error plot:
+![PB-Lite Banner](Classical_Edge_Detection/results/edges/img3/ColorMap_3.png)
+
 
 
