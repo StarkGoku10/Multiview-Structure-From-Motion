@@ -236,8 +236,8 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
     </td>
     <td>
       <figure style= "text-align: center;">
-        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/herz-jesues.gif" alt="GIF 2" width="350">
-        <figcaption>3D Reconstruction</figcaption>
+        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/herz-jesues.gif" alt="GIF 2" width="300">
+        <figcaption>Reconstruction</figcaption>
       </figure>
     </td>
   </tr>
