@@ -222,7 +222,7 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
 ## Results 
 
-**Results(without Bundle Adjustment)**:
+### **Results(without Bundle Adjustment)**:
 
 1. **Herz-Jesus Dataset:**
 
@@ -230,13 +230,13 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
   <tr>
     <td>
       <figure>
-        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/reprojection_errors_herz.png" alt="Image 1" width="250">
+        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/reprojection_errors_herz.png" alt="Image 1" width="300">
         <figcaption>Reprojection Error plot</figcaption>
       </figure>
     </td>
     <td>
       <figure>
-        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/herz-jesues.gif" alt="GIF 2" width="250">
+        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/herz-jesues.gif" alt="GIF 2" width="300">
         <figcaption>3D reconstruction</figcaption>
       </figure>
     </td>
