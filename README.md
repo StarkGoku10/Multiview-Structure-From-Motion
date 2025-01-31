@@ -224,7 +224,7 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
 ### **Results(without Bundle Adjustment)**:
 
-1. **Herz-Jesus Dataset:**
+1. **Herz-Jesus:**
 
 <table>
   <tr>
@@ -302,7 +302,7 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
 ### **Results(with Bundle Adjustment)**:
 
-1. **Herz-Jesus Dataset:**
+1. **Herz-Jesus:**
 
 <table>
   <tr>
