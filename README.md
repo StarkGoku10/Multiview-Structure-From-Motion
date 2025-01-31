@@ -236,7 +236,7 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
     </td>
     <td>
       <figure style= "text-align: center;">
-        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/herz-jesues.gif" alt="GIF 2" width="300">
+        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/herz-jesues.gif" alt="GIF 1" width="300">
         <figcaption>Reconstruction</figcaption>
       </figure>
     </td>
@@ -249,7 +249,7 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
   <tr>
     <td>
       <figure style="text-align: center;">
-        <img src="Results/Results without Bundle Adjustment/Fountain-P11/reprojection_errors_fountain.png" alt="Image 1" width="300">
+        <img src="Results/Results without Bundle Adjustment/Fountain-P11/reprojection_errors_fountain.png" alt="Image 2" width="300">
         <figcaption>Reprojection Error plot</figcaption>
       </figure>
     </td>
@@ -262,3 +262,40 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
   </tr>
 </table>
 
+3. **Gustavll-Adolf**
+
+<table>
+  <tr>
+    <td>
+      <figure style="text-align: center;">
+        <img src="Results/Results without Bundle Adjustment/GustavllAdolf/reprojection_errors_Gustav.png" alt="Image 3" width="300">
+        <figcaption>Reprojection Error plot</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style= "text-align: center;">
+        <img src="Results/Results without Bundle Adjustment/GustavllAdolf/GustavllAdolf.gif" alt="GIF 3" width="300">
+        <figcaption>Reconstruction</figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
+
+4. **Entry-P10**
+
+<table>
+  <tr>
+    <td>
+      <figure style="text-align: center;">
+        <img src="Results/Results without Bundle Adjustment/Entry-P10/reprojection_errors_entry.png" alt="Image 3" width="300">
+        <figcaption>Reprojection Error plot</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style= "text-align: center;">
+        <img src="Results/Results without Bundle Adjustment/Entry-P10/Entry.gif" alt="GIF 3" width="300">
+        <figcaption>Reconstruction</figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
