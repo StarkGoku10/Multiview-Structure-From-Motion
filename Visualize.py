@@ -628,6 +628,6 @@ class StructurefromMotion:
 if __name__ == '__main__':
      # Example usage:
     # Provide path to your dataset directory containing images + K.txt
-    sfm = StructurefromMotion("Datasets\GustavIIAdolf")
+    sfm = StructurefromMotion("Dataset/fountain-P11")
     sfm()
     # sfm(bundle_adjustment_enabled=True)

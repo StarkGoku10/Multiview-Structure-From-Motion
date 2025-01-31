@@ -1,6 +1,6 @@
 # Structure-from-Motion (SfM)
 
-![PB-Lite Banner](Classical_Edge_Detection/results/edges/img3/ColorMap_3.png)
+![SfM- banner](Results/GustavllAdolf.png)
 
 ## Overview
 
@@ -222,10 +222,25 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
 
 ## Results 
 
-- Reprojection error plots:
+**Results(without Bundle Adjustment)**:
 
-  1. **
-![PB-Lite Banner](Classical_Edge_Detection/results/edges/img3/ColorMap_3.png)
+1. **Herz-Jesus Dataset:**
 
+<table>
+  <tr>
+    <td>
+      <figure>
+        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/herz-jesues.gif" alt="GIF 2" width="250">
+        <figcaption>Accuracy over Epochs</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure>
+        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/reprojection_errors_herz.png" alt="Image 1" width="250">
+        <figcaption>Confusion Matrix (GIF)</figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
 
 
