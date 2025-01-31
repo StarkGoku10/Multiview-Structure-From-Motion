@@ -230,14 +230,14 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
   <tr>
     <td>
       <figure>
-        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/herz-jesues.gif" alt="GIF 2" width="250">
-        <figcaption>Accuracy over Epochs</figcaption>
+        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/reprojection_errors_herz.png" alt="Image 1" width="250">
+        <figcaption>Reprojection Error plot</figcaption>
       </figure>
     </td>
     <td>
       <figure>
-        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/reprojection_errors_herz.png" alt="Image 1" width="250">
-        <figcaption>Confusion Matrix (GIF)</figcaption>
+        <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/herz-jesues.gif" alt="GIF 2" width="250">
+        <figcaption>3D reconstruction</figcaption>
       </figure>
     </td>
   </tr>
