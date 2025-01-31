@@ -230,7 +230,7 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
       <tr>
         <td>
           <figure style="text-align: center;">
-            <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/reprojection_errors_herz.png" alt="Image 1" width="300">
+            <img src="Results/Results without Bundle Adjustment/Herz-Jesus-P8/reprojection_errors_herz.png" alt="Image 1" width="280">
             <figcaption>Reprojection Error plot</figcaption>
           </figure>
         </td>
@@ -249,7 +249,7 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
       <tr>
         <td>
           <figure style="text-align: center;">
-            <img src="Results/Results without Bundle Adjustment/Fountain-P11/reprojection_errors_fountain.png" alt="Image 1" width="300">
+            <img src="Results/Results without Bundle Adjustment/Fountain-P11/reprojection_errors_fountain.png" alt="Image 1" width="280">
             <figcaption>Reprojection Error plot</figcaption>
           </figure>
         </td>
