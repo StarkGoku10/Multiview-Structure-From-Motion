@@ -299,3 +299,56 @@ Execute the `sfm.py` script to run the SfM pipeline. The script processes the fi
     </td>
   </tr>
 </table>
+
+### **Results(with Bundle Adjustment)**:
+
+1. **Herz-Jesus Dataset:**
+
+<table>
+  <tr>
+    <td>
+      <figure style="text-align: center;">
+        <img src="Results/Results with Bundle Adjustment/Herz-Jesus/reprojection_errors_herz_ba.png" alt="Image 1" width="300">
+        <figcaption>Reprojection Error plot</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style= "text-align: center;">
+        <img src="Results/Results with Bundle Adjustment/Herz-Jesus/herz.gif" alt="GIF 1" width="300">
+        <figcaption>Reconstruction</figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
+
+2. **Fountain-P11**
+
+<table>
+  <tr>
+    <td>
+      <figure style="text-align: center;">
+        <img src="Results/Results with Bundle Adjustment/Fountain-P11/reprojection_errors_fountain_ba.png" alt="Image 2" width="300">
+        <figcaption>Reprojection Error plot</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style= "text-align: center;">
+        <img src="Results/Results with Bundle Adjustment/Fountain-P11/fountain.gif" alt="GIF 2" width="300">
+        <figcaption>Reconstruction</figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
+
+3. **Entry-P10**
+
+<table>
+  <tr>
+    <td>
+      <figure style="text-align: center;">
+        <img src="Results/Results with Bundle Adjustment/Entry-P10/reprojection_errors_entry_ba.png" alt="Image 3" width="300">
+        <figcaption>Reprojection Error plot</figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
