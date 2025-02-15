@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains a Structure from Motion(SfM) pipeline that resonctructs 3D point clouds from a set of continuous images of a scene. The project aims to demonstrates= the fundamentals of camera calibration, feature matching, feature matching, pose estimation, triangulation of 3D points and bundle adjustment(optional) to refine both 3D pointds and camera parameters and point cloud visualization which is a 3D representation of the captured scene.
+This repository contains a Structure from Motion(SfM) pipeline that resonctructs 3D point clouds from a set of continuous images of a scene. The project aims to demonstrate the fundamentals of camera calibration, feature matching, feature matching, pose estimation, triangulation of 3D points and bundle adjustment(optional) to refine both 3D pointds and camera parameters and point cloud visualization which is a 3D representation of the captured scene.
 
 **Key Highlights:**
 - **Incremental SfM:** Takes pairs of images, estimates relative pose, and gradually adds more images to improve the reconstruction.
